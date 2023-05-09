@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="bgi">
+      <div class="nav">
+        <div class="title">TravelCream</div>
+        <a
+          href="#flight"
+          type="button"
+          class="nav_btn"
+          style="text-decoration: none; color: black"
+          >Flight</a
+        >
+        <a
+          href="https://www.agoda.com/ko-kr/?device=c&network=g&adid=579385999632&rand=3237069945923175140&expid=&adpos=&aud=kwd-309008849480&site_id=1891442&tag=002d7700-ce25-4b2b-bc9e-d8af43fbea0c&gclid=Cj0KCQjw8qmhBhClARIsANAtboe4wnr49oFy6oijgWp5-PUrMP_bl_OzdrS1rDdV1NDmO1ZY6dTDxIAaAkc4EALw_wcB"
+          type="button"
+          class="nav_btn"
+          style="text-decoration: none; color: black"
+          >Hotels</a
+        >
+        <button class="nav_btn">Trips</button>
+        <button class="nav_btn">Active</button>
+        <button class="nav_btn">Deals</button>
+        <button id="loginbtn">Login</button>
+        <div class="login_main">
+          <div class="login-container">
+            <div id="login-text">Are you ready to travel?</div>
+            <input type="text" placeholder="ID" id="id" class="account" />
+            <input
+              type="password"
+              placeholder="Password"
+              id="password"
+              class="account"
+            />
+            <button id="login" class="account">login</button>
+            <div id="close-button" class="toggle">close</div>
+            <p id="alert" class="account"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="serchAerea">
+        <form>
+          <input type="search" placeholder="search" />
+          <span>검색</span>
+        </form>
+      </div>
+      <div class="bg_text">
+        <div>Do you wnat to vist Japan?</div>
+        <div class="nexttext">why not?</div>
+      </div>
+      <form class="serchbar">
+        <input class="live3" type="date" />
+      </form>
+      <!-- 출발할 나라 -->
+      <input class="live1" type="radio" name="acc" id="answer1" />
+      <label for="answer1">where are you living from?<i></i></label>
+      <div class="live1_nation">
+        <input type="radio" id="nations" name="nation" />
+        <label for="nations"> Japan</label><br />
+        <input type="radio" name="nation" />
+        <label for="">HongKong</label><br />
+        <input type="radio" name="nation" />
+        <label for="">Korea</label><br />
+        <input type="radio" name="nation" />
+        <label for="">NewYork</label><br />
+        <input type="radio" name="nation" />
+        <label for="">Taiwan</label>
+        <button id="button1">close</button>
+      </div>
+
+      <!-- 가고싶은 나라 -->
+      <input class="live2" type="radio" name="acc" id="answer2" />
+      <label for="answer2">where do you want to go?<i></i></label>
+      <div class="live2_nation">
+        <input type="radio" id="nations" name="nation1" />
+        <label for="nations"> Japan</label><br />
+        <input type="radio" name="nation1" />
+        <label for="">HongKong</label><br />
+        <input type="radio" name="nation1" />
+        <label for="">Korea</label><br />
+        <input type="radio" name="nation1" />
+        <label for="">NewYork</label><br />
+        <input type="radio" name="nation1" />
+        <label for="">Taiwan</label>
+        <button id="button2">close</button>
+      </div>
+    </div>
+
+    <div class="flight" id="flight">Flight</div>
+
+    <div class="airlin-nav">
+      <div class="Airline" style="margin-right: 220px">Airline</div>
+      <div class="Date">
+        <div style="margin-left: 100px">Date</div>
+        <div style="margin-left: 100px">Departure</div>
+        <div>Arrival</div>
+        <div>Time</div>
+      </div>
+      <div>Price</div>
+    </div>
+
+    <div class="airname">
+      <div class="jeju-air">
+        <div><img src="./img/unnamed.png" alt="" /></div>
+        <div class="air-name" style="padding-left: 14px">Jeju-air</div>
+        <div class="jeju-air-menu">
+          <div>03/11/2022</div>
+          <div>OSAKA</div>
+          <div>Fukuoka</div>
+          <div>08:45</div>
+        </div>
+        <div class="air-price">870$</div>
+      </div>
+
+      <div class="airname">
+        <div class="jeju-air">
+          <div><img src="./img/다운로드.jpeg" alt="" /></div>
+          <div class="air-name">Busan-air</div>
+          <div class="jeju-air-menu">
+            <div>03/11/2022</div>
+            <div>OSAKA</div>
+            <div>Fukuoka</div>
+            <div>08:30</div>
+          </div>
+          <div class="air-price">850$</div>
+        </div>
+      </div>
+
+      <div class="airname">
+        <div class="jeju-air">
+          <div><img src="./img/서울에어.png" alt="" /></div>
+          <div class="air-name" style="padding-left: 15px">Seoul-air</div>
+          <div class="jeju-air-menu">
+            <div>03/11/2022</div>
+            <div>OSAKA</div>
+            <div>Fukuoka</div>
+            <div>10:45</div>
+          </div>
+          <div class="air-price">890$</div>
+        </div>
+      </div>
+
+      <div class="airname">
+        <div class="jeju-air">
+          <div><img src="./img/코리안에어.jpeg" alt="" /></div>
+          <div class="air-name">Korean-air</div>
+          <div class="jeju-air-menu">
+            <div>03/11/2022</div>
+            <div>OSAKA</div>
+            <div>Fukuoka</div>
+            <div>08:00</div>
+          </div>
+          <div class="air-price">950$</div>
+        </div>
+      </div>
+    </div>
+
+    <a href="index2.html" class="all-flight" style="text-decoration: none"
+      >see all flights</a
+    >
+
+    <div>
+      <div class="atrs-menu">
+        <div class="at-nav">
+          <div class="attractions">Attractions</div>
+          <div class="att-menu">All</div>
+          <div class="att-menu">Shopping</div>
+          <div class="att-menu">Shows</div>
+          <div class="att-menu">Parks</div>
+          <div class="att-menu">Circuits</div>
+          <div class="att-menu">Museums</div>
+          <div class="att-menu">Monuments</div>
+        </div>
+      </div>
+      <div class="at-bg">
+        <div class="at-img">
+          <a
+            href="https://www.tripadvisor.co.kr/Attraction_Review-g298566-d325724-Reviews-Tennoji_Park-Osaka_Osaka_Prefecture_Kinki.html"
+            style="text-decoration: none"
+          >
+            <div class="at-name">Osaka Park</div></a
+          >
+        </div>
+        <div class="at-img1">
+          <a
+            href="https://www.tripadvisor.co.kr/Attraction_Review-g298566-d1407295-Reviews-Osaka_City_Air_Terminal-Osaka_Osaka_Prefecture_Kinki.html"
+            style="text-decoration: none"
+            ><div class="at-name">Osaka city</div></a
+          >
+        </div>
+        <div class="at-img2">
+          <a
+            href="https://www.tripadvisor.co.kr/Attraction_Review-g14127623-d320970-Reviews-Osaka_Castle-Chuo_Osaka_Osaka_Prefecture_Kinki.html"
+            style="text-decoration: none"
+          >
+            <div class="at-name">Osaka Castle</div>
+          </a>
+        </div>
+        <div class="at-img3">
+          <a
+            href="https://www.tripadvisor.co.kr/Attraction_Review-g14135010-d325333-Reviews-Dotombori_District-Dotombori_Chuo_Osaka_Osaka_Prefecture_Kinki.html"
+            style="text-decoration: none"
+          >
+            <div class="at-name">Night Osaka</div>
+          </a>
+        </div>
+        <div class="at-img4">
+          <a
+            href="https://www.tripadvisor.co.kr/Tourism-g1023539-Katano_Osaka_Prefecture_Kinki-Vacations.html"
+            style="text-decoration: none"
+          >
+            <div class="at-name">Osaka small town</div>
+          </a>
+        </div>
+        <div class="at-img5">
+          <a
+            href="https://triple.guide/regions/71476976-cf9a-4ae8-a60f-76e6fb26900d/attractions/c33d431c-c1a7-4ed9-83a5-b96958d2af7c"
+            style="text-decoration: none"
+          >
+            <div class="at-name">Osaka River</div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <span class="all-flight">see all attractions</span>
+
+    <div class="trip-container">
+      <div class="trip-bar">
+        <div class="trip">Trip</div>
+        <div class="besttrip">Best Trip</div>
+        <div class="besttrip">Popularity</div>
+      </div>
+      <div class="trip-warp">
+        <div class="trip-img">
+          <img src="./img/at-img5.jpeg" alt="" />
+          <div class="trip-info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis magni
+            minus id delectus possimus veritatis iste molestiae ea aliquid. Ex,
+            eaque possimus iste asperiores mollitia ipsam inventore explicabo
+            harum facilis?
+          </div>
+        </div>
+      </div>
+
+      <div class="trip-warp">
+        <div class="trip-img">
+          <img src="./img/at-img3.webp" alt="" />
+          <div class="trip-info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis magni
+            minus id delectus possimus veritatis iste molestiae ea aliquid. Ex,
+            eaque possimus iste asperiores mollitia ipsam inventore explicabo
+            harum facilis?
+          </div>
+        </div>
+      </div>
+
+      <div class="trip-warp">
+        <div class="trip-img">
+          <img src="./img/at.img2.jpeg" alt="" />
+          <div class="trip-info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            voluptatem impedit placeat ducimus, beatae adipisci minima suscipit
+            amet possimus voluptas repellendus explicabo rem temporibus
+            reprehenderit sequi magni ipsa id. Quasi. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Quis magni minus id delectus possimus
+            veritatis iste molestiae ea aliquid. Ex, eaque possimus iste
+            asperiores mollitia ipsam inventore explicabo harum facilis?
+          </div>
+        </div>
+      </div>
+      <span class="all-flight">see all Trip</span>
+    </div>
+
+    <div class="footer">
+      <div class="footer-menu">
+        <ul style="list-style: none">
+          Cities
+          <li>Paris</li>
+          <li>Minima</li>
+          <li>London</li>
+          <li>Osaka</li>
+          <li>Tokyo</li>
+        </ul>
+      </div>
+
+      <div class="footer-menu">
+        <ul style="list-style: none">
+          Explore
+          <li>Register</li>
+          <li>Login</li>
+          <li>Assistance</li>
+          <li>Eco</li>
+        </ul>
+      </div>
+
+      <div class="footer-menu">
+        <ul style="list-style: none">
+          About us
+          <li>About TravelCream</li>
+          <li>Careers</li>
+          <li>Blog</li>
+          <li>Privacy Policy</li>
+          <li>Terms of Usage</li>
+        </ul>
+      </div>
+
+      <div class="footer-menu">
+        <ul style="list-style: none">
+          Contact
+          <li>Feel free to get in touch via email:</li>
+          <li>
+            <a href="mailto:support@travelcream.com" style="color: red"
+              >support@travelcream.com</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+
+    <div id="container2">
+      <input type="radio" name="acc" id="answer1" />
+      <label for="answer1">이것은 질문.<i></i></label>
+      <div><p>이것은 답변.</p></div>
+      <input type="radio" name="acc" id="answer2" />
+      <label for="answer2">이것은 질문1.<i></i></label>
+      <div><p>이것은 답변1.</p></div>
+      <button id="button1">닫기</button>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>

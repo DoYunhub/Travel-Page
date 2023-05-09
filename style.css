@@ -1,0 +1,524 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  padding: 0;
+}
+
+.bgi {
+  background-image: url(./img/oska.jpeg);
+  width: 100%;
+  height: 900px;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 30px;
+  padding-top: 20px;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.nav_btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-left: 40px;
+  font-size: 20px;
+}
+#loginbtn {
+  border: 2px solid black;
+  cursor: pointer;
+  background-color: transparent;
+  margin-left: 500px;
+  border-radius: 5px;
+  font-size: 25px;
+  font-weight: 900;
+}
+#loginbtn:hover {
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.bg_text {
+  text-align: center;
+  margin: 100px auto 100px auto;
+  font-size: 50px;
+  font-weight: 900;
+}
+.nexttext {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 30px;
+}
+.serchAerea {
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  margin-top: 24px;
+  margin-left: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.serchAerea > form > input {
+  border: none;
+  background-color: rgba(44, 36, 36, 0);
+  width: 250px;
+  height: 40px;
+  padding-left: 10px;
+  color: #fff;
+}
+.serchAerea > form > span {
+  width: 50px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+input::placeholder {
+  color: #fff;
+  font-size: 15px;
+}
+
+.serchbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+.serchbar > form > input::placeholder {
+  color: black;
+  padding-left: 10px;
+}
+.serchbar > form > input {
+  border: 1px solid gray;
+  border-radius: 5px;
+  height: 40px;
+  text-align: center;
+}
+.live1 {
+  width: 240px;
+}
+.live2 {
+  width: 220px;
+}
+.live3 {
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.live4 {
+  width: 120px;
+  background-color: tomato;
+}
+
+.flight-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 120px;
+}
+.flight-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 300px;
+}
+.flight-menu > div {
+  margin-left: 65px;
+}
+
+.flight {
+  font-size: 30px;
+  margin-left: 152px;
+  margin-top: 100px;
+  font-weight: bolder;
+}
+.airlin-nav {
+  display: flex;
+  flex-direction: row;
+  margin-top: 60px;
+  margin-right: 150px;
+  font-size: 20px;
+}
+
+.Airline {
+  font-weight: 900;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Date {
+  display: flex;
+  flex-direction: row;
+  margin-right: 150px;
+}
+.Date > div {
+  margin-left: 90px;
+}
+
+.jeju-air {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-right: 250px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  width: 1500px;
+  height: 140px;
+  /* text-align: center; */
+  align-items: center;
+}
+.jeju-air-menu {
+  display: flex;
+  flex-direction: row;
+  margin-right: 60px;
+  text-align: center;
+}
+.air-name {
+  margin-right: 250px;
+}
+.jeju-air-menu > div {
+  flex-direction: row;
+  margin-right: 90px;
+}
+
+.air-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: tomato;
+  border: 1px solid tomato;
+  border-radius: 3px;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+}
+.air-price:hover {
+  background-color: #f1f1f1;
+}
+
+img {
+  padding-right: 20px;
+  width: 50px;
+  height: 50px;
+}
+
+.all-flight {
+  width: 50px;
+  height: 150px;
+  margin-top: 200px;
+  margin-left: 1200px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.all-flight:hover {
+  color: red;
+}
+
+.at-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 20px;
+  margin-top: 130px;
+}
+.att-menu:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.at-nav > div {
+  margin-left: 50px;
+}
+.attractions {
+  font-size: 30px;
+  margin-right: 270px;
+}
+.at-bg {
+  display: grid;
+  grid-template-columns: 620px 300px;
+  margin-left: 130px;
+  margin-top: 100px;
+}
+.at-img {
+  background-image: url(./img/at-img1.webp);
+  background-repeat: no-repeat;
+  background-size: 600px 300px;
+  width: 600px;
+  height: 320px;
+}
+.at-img1 {
+  background-image: url(./img/at.img2.jpeg);
+  background-repeat: no-repeat;
+  background-size: 600px 300px;
+  width: 600px;
+  height: 320px;
+}
+.at-img2 {
+  background-image: url(./img/at-img3.webp);
+  background-repeat: no-repeat;
+  background-size: 600px 300px;
+  width: 600px;
+  height: 320px;
+}
+.at-img3 {
+  background-image: url(./img/at-img4.jpeg);
+  background-repeat: no-repeat;
+  background-size: 600px 300px;
+  width: 600px;
+  height: 320px;
+}
+.at-img4 {
+  background-image: url(./img/at-img5.jpeg);
+  background-repeat: no-repeat;
+  background-size: 600px 300px;
+  width: 600px;
+  height: 320px;
+}
+.at-img5 {
+  background-image: url(./img/at-img6.jpeg);
+  background-repeat: no-repeat;
+  background-size: 600px 300px;
+  width: 600px;
+  height: 320px;
+}
+
+.at-name {
+  width: 600px;
+  height: 300px;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  line-height: 300px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.trip-bar {
+  display: flex;
+  font-size: 20px;
+  margin-top: 100px;
+}
+
+.trip {
+  font-size: 30px;
+  margin-right: 900px;
+  margin-left: 125px;
+}
+
+.besttrip {
+  margin-right: 100px;
+}
+.besttrip:hover {
+  color: red;
+  cursor: pointer;
+}
+.trip-img {
+  display: flex;
+}
+
+.trip-img > img {
+  width: 400px;
+  height: 300px;
+  margin-left: 130px;
+  margin-top: 50px;
+}
+.trip-info {
+  width: 800px;
+  height: 300px;
+  margin-top: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: none;
+  border-right: none;
+}
+
+.trip-img > div {
+  padding: 100px 0 100px 0;
+  margin-bottom: 80px;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  font-size: 38px;
+  margin-right: 110px;
+}
+
+ul > li {
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+/* ----------- */
+
+input[id*="answer"] {
+  display: none;
+}
+
+input[id*="answer"] + label {
+  font-size: 25px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+
+input[id*="answer"] + label i {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  transition: all 0.3s;
+}
+
+input[id*="answer"] + label + div {
+  overflow: hidden;
+  height: 0px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  transition: all 0.3s;
+  margin-left: 10px;
+}
+#button1,
+#button2 {
+  z-index: 999;
+  border: none;
+  background: none;
+  display: flex;
+  cursor: pointer;
+  color: #fff;
+}
+input[id*="answer"] + label + div p {
+  display: inline-block;
+  padding: 20px 0px;
+}
+
+input[id*="answer"]:checked + label + div {
+  height: 125px;
+}
+
+input[id*="answer"]:checked + label i {
+  transform: rotate(180deg);
+}
+.live1_nation,
+.live2_nation {
+  color: #fff;
+  margin-bottom: 40px;
+  padding-left: 650px;
+  width: 1200px;
+}
+
+.dropdwon-div {
+  display: inline-block;
+}
+.dropdown {
+  display: none;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown a:hover {
+  background-color: #f1f1f1;
+}
+.dropdown-div:hover .dropdown {
+  display: block;
+  position: absolute;
+}
+
+.best-price:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.nonstop:hover {
+  color: red;
+  cursor: pointer;
+}
+.airline:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.schedule:hover {
+  color: red;
+  cursor: pointer;
+}
+
+/* ----------------- */
+
+.login_main {
+  background: rgb(255, 255, 255);
+  width: 500px;
+  height: 600px;
+  z-index: 999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-left: 440px;
+  margin-top: 670px;
+  border-radius: 5px;
+}
+
+.toggle {
+  display: flex;
+}
+
+/* ------------------ login*/
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#id,
+#password {
+  margin-bottom: 10px;
+  width: 200px;
+}
+.account::placeholder {
+  color: gray;
+}
+#login {
+  width: 200px;
+  background-color: skyblue;
+  border-color: transparent;
+  color: white;
+}
+#login-text {
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+
+.account {
+  display: block;
+  margin-bottom: 3px;
+  padding: 3px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+}
+
+#alert {
+  border-color: transparent;
+}
+
+#close-button {
+  margin-top: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
